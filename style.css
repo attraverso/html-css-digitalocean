@@ -1,3 +1,21 @@
+body,
+#header-bottom-desk li a {
+  color: #031b4e;
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #0069ff;
+  font-weight: 600;
+  border: 1px solid #0069ff;
+}
+
+header {
+  background: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
+  background-size: cover;
+  height: 600px;
+}
+
 .header-label {
   width: 36px;
   padding: 3px;
@@ -13,8 +31,14 @@
   min-height: 0;
 }
 
-#header-top {
+.header-pad {
   padding: 10px;
+}
+
+#header-top,
+#header-bottom-desk {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
 }
 
 #header-top a {
@@ -31,4 +55,39 @@
 #header-top span+a:hover {
   color: #0069ff;
   text-decoration: none;
+}
+
+#header-bottom-desk svg {
+  fill: #0069ff;
+  position: relative;
+  top: -8px;
+  margin-right: 40px;
+}
+
+#header-bottom-desk li a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#header-bottom-mobile svg {
+  fill: #fff;
+}
+
+.dropdown-sy {
+  margin-right: 10px;
+}
+
+.dropdown-sy::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width:992px) {
+
 }
