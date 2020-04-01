@@ -1,5 +1,10 @@
+body {
+  background-color: #f3f5f9;
+}
+
 body,
-#header-bottom li a {
+#header-bottom li a,
+.btn-external a {
   color: #031b4e;
 }
 
@@ -22,8 +27,7 @@ header {
 }
 
 .btn-external {
-  background-color: #D5E4F7;
-  color: #031B4E;
+  background-color: #f2f8ff;
   border: 1px solid rgba(0, 105, 255, 0.2);
   width: 45%;
 }
@@ -74,11 +78,14 @@ header {
 }
 
 .navbar {
+  border-radius: 0;
+  margin-bottom: 0;
   min-height: 0;
+  z-index: 10;
 }
 
 .header-pad {
-  padding: 10px;
+  padding: 10px 15px;;
 }
 
 .separators-container {
@@ -137,6 +144,10 @@ header {
   text-decoration: none;
 }
 
+#header-bottom {
+  position: relative;
+}
+
 #header-bottom svg {
   fill: #fff;
 }
@@ -163,7 +174,8 @@ header {
 }
 
 #jumbotron {
-  margin-bottom: 60px;
+  padding-top: 160px;
+  padding-bottom: 60px;
 }
 
 .signup-box {
@@ -212,6 +224,6 @@ header {
  }
 
  #jumbotron {
-   margin-top: 60px;
+   padding-top: 200px;
  }
 }
