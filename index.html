@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <title>Pretend Digitalocean Page</title>
     <script src="https://kit.fontawesome.com/cca2e2f8eb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
@@ -12,20 +12,22 @@
   <body>
 
     <header class="navbar navbar-fixed-top">
+      <!-- HEADER TOP -->
       <div class="container-fluid header-pad" id="header-top">
         <span class="header-label">NEW</span>
-        <a href="#">Working on something related to COVID-19? DigitalOcean would like to help ❯</a>
+        <a class="greytext" href="#">Working on something related to COVID-19? DigitalOcean would like to help ❯</a>
         <nav class="navbar-right hidden-xs">
           <ul class="nav navbar-nav">
-            <li><a href="#">Docs</a></li>
-            <li><a href="#">Get Support</a></li>
-            <li><a href="#">Sales</a></li>
-            <li><a href="#">Sign in</a></li>
+            <li><a class="greytext" href="#">Docs</a></li>
+            <li><a class="greytext" href="#">Get Support</a></li>
+            <li><a class="greytext" href="#">Sales</a></li>
+            <li><a class="greytext" href="#">Sign in</a></li>
           </ul>
         </nav>
       </div>
-      <!-- DESKTOP HEADER BOTTOM -->
-      <div class="navbar container-fluid header-pad hidden-xs hidden-sm" id="header-bottom-desk">
+      <!-- END HEADER TOP -->
+      <!-- HEADER BOTTOM -->
+      <div class="navbar container-fluid header-pad" id="header-bottom">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="collapsemenu" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -59,11 +61,55 @@
           <a class="btn btn-primary navbar-right" href="#">Sign Up</a>
         </div>
       </div>
-      <!-- END DESKTOP HEADER BOTTOM -->
-
-      <div class="container">
+      <!-- END HEADER BOTTOM -->
+      <!-- JUMBOTRON -->
+      <div class="container" id="jumbotron">
         <div class="row">
-          <div class="col">
+          <div class="col-xs-12 col-sm-6">
+            <div class="wrapper white-text">
+              <h1>Welcome to the developer cloud</h1>
+              <p class="lead">We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-offset-1 col-sm-5">
+            <div class="signup-box clearfix">
+              <p class="cta">Deploy in seconds</p>
+              <form>
+                <input type="text" name="fullname" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email Address">
+                <input type="password" name="password" placeholder="Create a Password">
+                <button class="btn btn-inverse" type="button" name="createaccount">Create your account</button>
+              </form>
+              <div class="separators-container text-center">
+                <span class="separators greytext">or sign up with</span>
+              </div>
+              <div class="btn btn-external">
+                <a href="https://cloud.digitalocean.com/registrations/google">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+                    <title>Google</title>
+                    <g fill="none" fill-rule="evenodd">
+                      <path fill="#4285F4" d="M17.64 9.2045c0-.6381-.0573-1.2518-.1636-1.8409H9v3.4814h4.8436c-.2086 1.125-.8427 2.0782-1.7959 2.7164v2.2581h2.9087c1.7018-1.5668 2.6836-3.874 2.6836-6.615z">
+                      </path>
+                      <path fill="#34A853" d="M9 18c2.43 0 4.4673-.806 5.9564-2.1805l-2.9087-2.2581c-.8059.54-1.8368.859-3.0477.859-2.344 0-4.3282-1.5831-5.036-3.7104H.9574v2.3318C2.4382 15.9832 5.4818 18 9 18z">
+                      </path>
+                      <path fill="#FBBC05" d="M3.964 10.71c-.18-.54-.2822-1.1168-.2822-1.71s.1023-1.17.2823-1.71V4.9582H.9573A8.9965 8.9965 0 0 0 0 9c0 1.4523.3477 2.8268.9573 4.0418L3.964 10.71z"></path>
+                      <path fill="#EA4335" d="M9 3.5795c1.3214 0 2.5077.4541 3.4405 1.346l2.5813-2.5814C13.4632.8918 11.426 0 9 0 5.4818 0 2.4382 2.0168.9573 4.9582L3.964 7.29C4.6718 5.1627 6.6559 3.5795 9 3.5795z">
+                      </path>
+                    </g>
+                  </svg>
+                  Google
+                </a>
+              </div>
+              <div class="btn btn-external">
+                <a href="https://cloud.digitalocean.com/registrations/github" class="www-Button www-Button--googleSSO github-signup">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.22764 0C4.12937 0 0 4.12937 0 9.22764C0 13.3109 2.64141 16.7597 6.3094 17.9824C6.77078 18.0631 6.9438 17.7863 6.9438 17.5441C6.9438 17.3249 6.93227 16.5982 6.93227 15.8254C4.61382 16.2522 4.01403 15.2602 3.82947 14.7412C3.72566 14.4759 3.27581 13.6569 2.88364 13.4378C2.56067 13.2647 2.09929 12.838 2.8721 12.8264C3.59878 12.8149 4.11784 13.4954 4.29085 13.7723C5.12134 15.1679 6.44782 14.7758 6.97841 14.5335C7.05915 13.9337 7.30137 13.53 7.56667 13.2993C5.51352 13.0687 3.36809 12.2728 3.36809 8.74319C3.36809 7.73969 3.72566 6.9092 4.31392 6.26326C4.22165 6.03257 3.89868 5.08674 4.4062 3.81794C4.4062 3.81794 5.17902 3.57571 6.9438 4.76377C7.68201 4.55615 8.46636 4.45234 9.25071 4.45234C10.0351 4.45234 10.8194 4.55615 11.5576 4.76377C13.3224 3.56418 14.0952 3.81794 14.0952 3.81794C14.6027 5.08674 14.2798 6.03257 14.1875 6.26326C14.7758 6.9092 15.1333 7.72815 15.1333 8.74319C15.1333 12.2843 12.9764 13.0687 10.9232 13.2993C11.2577 13.5877 11.5461 14.1414 11.5461 15.0065C11.5461 16.2407 11.5346 17.2326 11.5346 17.5441C11.5346 17.7863 11.7076 18.0746 12.169 17.9824C14.0008 17.364 15.5926 16.1866 16.7203 14.6162C17.848 13.0457 18.4548 11.1611 18.4553 9.22764C18.4553 4.12937 14.3259 0 9.22764 0Z" fill="#99A1B3"></path>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+              <small class="text-center"><p class="topdistance">By signing up you agree to the <a href="#">Terms of service</a>.</p></small>
+            </div>
           </div>
         </div>
       </div>
