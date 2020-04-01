@@ -22,6 +22,11 @@ header {
   background-size: cover;
 }
 
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .btn {
   font-weight: 600;
 }
@@ -86,6 +91,10 @@ header {
 
 .header-pad {
   padding: 10px 15px;;
+}
+
+.rel {
+  position: relative;
 }
 
 .separators-container {
@@ -192,6 +201,20 @@ header {
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #F1F1F1;
+}
+
+#business img {
+  max-width: 305px;
+  max-height: 150px;
+  margin-bottom: 20px;
+}
+
+#business a::after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px;
 }
 
 @media screen and (min-width:768px) {
