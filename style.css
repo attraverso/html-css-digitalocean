@@ -17,6 +17,10 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 36px;
+}
+
 header {
   background-color: #0049ff;
   background-size: cover;
@@ -76,10 +80,16 @@ section {
   text-align: center;
 }
 
-.lead {
-  font-size: 22px;
-  line-height: 1.5em;
+.white-text .lead {
+  font-size: 24px;
+  line-height: 1.6em;
   opacity: 0.8;
+}
+
+.whitebg .lead {
+  font-size: 20px;
+  line-height: 1.4em;
+  opacity: 0.7;
 }
 
 .navbar {
@@ -123,17 +133,19 @@ section {
   width: calc((100% - 100px) / 2)
 }
 
-.topdistance {
+.topspace {
   margin-top: 30px;
 }
 
-.white-text {
-  color: white;
+.whitebg {
+  background-color: #fff;
 }
 
-#header-top,
-#header-bottom-desk {
-  background-color: #fff;
+.white-text {
+  color: #fff;
+}
+
+#header-top {
   border-bottom: 1px solid #ccc;
 }
 
@@ -250,3 +262,40 @@ section {
    padding-top: 200px;
  }
 }
+
+.feature-shelves li {
+  list-style-type: none;
+  padding: 10px 0 10px 20px;
+  border-left: 2px solid #ccc;
+}
+
+.feature-shelves li:first-child {
+  border-left: 2px solid blue;
+}
+
+.feature-shelves li a {
+ font-size: 16px;
+}
+
+.feature-shelves li a:hover {
+ color: #000;
+ text-decoration: none;
+}
+
+/* DELETE DELETE DELETE */
+.setup {
+  background-color: purple;
+  height: 100px;
+  border: 2px solid blue;
+}
+.setup3 {
+  background-color: green;
+  height: 100px;
+  border: 2px solid red;
+}
+.setup2 {
+  background-color: #666;
+  height: 80px;
+  border: 2px solid coral;
+}
+/* DELETE DELETE DELETE */
