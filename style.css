@@ -14,6 +14,14 @@ td a:hover {
   color: #0049ff;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 h1 {
   font-size: 38px;
   font-weight: 700;
@@ -23,9 +31,9 @@ h2 {
   font-size: 36px;
 }
 
-header {
+header,
+#start {
   background-color: #0049ff;
-  background-size: cover;
 }
 
 q {
@@ -35,7 +43,8 @@ q {
 }
 
 section,
-.sectionfx {
+.sectionfx,
+footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -171,7 +180,8 @@ td a {
   background-color: #fff;
 }
 
-.white-text {
+.white-text,
+footer a:hover {
   color: #fff;
 }
 
@@ -186,7 +196,6 @@ td a {
 }
 
 #header-top a {
-  /* color: #5b6987; */
   padding: 5px 10px;
   font-size: 12px;
   font-weight: 600;
@@ -198,7 +207,6 @@ td a {
 
 #header-top span+a:hover {
   color: #0069ff;
-  text-decoration: none;
 }
 
 #header-bottom {
@@ -280,7 +288,6 @@ td a {
 
 .feature-shelves li a:hover {
  color: #000;
- text-decoration: none;
 }
 
 .carouselimg::after {
@@ -327,6 +334,43 @@ td a:after {
   margin-left: 5px;
 }
 
+footer {
+  background-color: #010e28;
+}
+
+footer a {
+  color: #808794;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer li {
+  padding: 5px;
+  list-style-type: none;
+}
+
+footer span {
+  position: absolute;
+  top: 50%;
+  left: 90px;
+  transform: translateY(-50%);
+}
+
+footer svg {
+  fill: #0069ff;
+}
+
+#footer-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+footer .container:first-child {
+  padding: 30px;
+}
+]
+
 /* MEDIA QUERY */
 
 @media screen and (min-width:768px) {
@@ -334,8 +378,10 @@ td a:after {
     font-size: 62px;
   }
 
- header {
+ header,
+ #start {
      background: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
+     background-size: cover;
  }
 
  .lead {
@@ -362,21 +408,3 @@ td a:after {
    padding-top: 200px;
  }
 }
-
-/* DELETE DELETE DELETE */
-.setup {
-  background-color: purple;
-  height: 100px;
-  border: 2px solid blue;
-}
-.setup3 {
-  background-color: green;
-  height: 100px;
-  border: 2px solid red;
-}
-.setup2 {
-  background-color: #666;
-  height: 80px;
-  border: 2px solid coral;
-}
-/* DELETE DELETE DELETE */
