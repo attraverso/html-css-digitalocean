@@ -28,7 +28,14 @@ header {
   background-size: cover;
 }
 
-section {
+q {
+  font-size: 28px;
+  font-weight: 200;
+  /* opacity: 0.6; */
+}
+
+section,
+.sectionfx {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -109,6 +116,10 @@ td a {
   font-size: 20px;
   line-height: 1.4em;
   opacity: 0.7;
+}
+
+.lightgreytext {
+  color: #939eb6;
 }
 
 .navbar {
