@@ -313,14 +313,14 @@ footer a:hover {
 }
 
 #business img {
-  height: 100px;
+  height: 80px;
   margin-bottom: 20px;
 }
 
 #stubborn-img {
-  margin-top: 20px;
-  max-height: 62px;
-  max-width: 200px;
+    margin-top: 20px;
+    max-height: 62px;
+    max-width: 200px;
 }
 
 .feature-shelves li {
