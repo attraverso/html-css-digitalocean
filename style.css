@@ -38,7 +38,7 @@ header,
 
 q {
   font-size: 28px;
-  font-weight: 200;
+  font-weight: 400;
   /* opacity: 0.6; */
 }
 
@@ -59,17 +59,39 @@ td:first-child {
 }
 
 td:nth-child(2) {
-  min-width: 200px;
+  min-width: 180px;
   padding-left: 30px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+td:last-child {
+  text-align: right;
 }
 
 td a {
   color: #00d7d2;
 }
 
+td a:after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* GENERAL CLASSES - ALPHABETICAL ORDER */
+
+.big-a {
+  font-size: 16px;
+}
+
 .btn {
   font-weight: 600;
+}
+
+.btn-big {
+  padding: 10px 40px;
 }
 
 .btn-external {
@@ -94,6 +116,30 @@ td a {
   background-color: #fff;
   color: #0069ff;
   border: 1px solid #0069ff;
+}
+
+.carouselimg::before {
+  content: "\f104";
+  color: #acb4c6;
+  font-family: "Font Awesome 5 Pro";
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+}
+
+.carouselimg::after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-size: 30px;
+  font-weight: bold;
+  color: #031b4e;
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
 }
 
 .cta {
@@ -140,6 +186,14 @@ td a {
 
 .rel {
   position: relative;
+}
+
+.right-thingie::after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px;
 }
 
 .roundcorners {
@@ -259,17 +313,14 @@ footer a:hover {
 }
 
 #business img {
-  max-width: 305px;
-  max-height: 150px;
+  height: 100px;
   margin-bottom: 20px;
 }
 
-.right-thingie::after {
-  content: "\f105";
-  font-family: "Font Awesome 5 Pro";
-  font-size: 14px;
-  font-weight: bold;
-  margin-left: 5px;
+#stubborn-img {
+  margin-top: 20px;
+  max-height: 62px;
+  max-width: 200px;
 }
 
 .feature-shelves li {
@@ -286,37 +337,14 @@ footer a:hover {
  font-size: 16px;
 }
 
-.feature-shelves li a:hover {
+.feature-shelves li a:hover,
+.feature-shelves li:first-child a {
  color: #000;
-}
-
-.carouselimg::after {
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
-  font-size: 30px;
-  font-weight: bold;
-  color: red;
-  position: absolute;
-  top: 50%;
-  right: -30px;
-  transform: translateY(-50%);
-}
-
-.carouselimg::before {
-  content: "\f107";
-  color: red;
-  font-family: "Font Awesome 5 Pro";
-  font-size: 14px;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: -50px;
-  transform: translateY(-50%);
+ font-weight: 600;
 }
 
 #stubborn {
-  width: 40px;
-  margin-bottom: 10px;
+  max-height: 41px;
 }
 
 #world {
@@ -326,12 +354,9 @@ footer a:hover {
   background-repeat: no-repeat;
 }
 
-td a:after {
-  content: "\f105";
-  font-family: "Font Awesome 5 Pro";
-  font-size: 14px;
-  font-weight: bold;
-  margin-left: 5px;
+#teams img {
+  height: 25px;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -369,7 +394,6 @@ footer svg {
 footer .container:first-child {
   padding: 30px;
 }
-]
 
 /* MEDIA QUERY */
 

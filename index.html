@@ -141,7 +141,7 @@
             <img src="pics/wework.png" alt="wework logo">
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4">
-            <img src="pics/splunk.png" alt="splunk logo">
+            <img id="stubborn-img" src="pics/splunk.png" alt="splunk logo">
           </div>
         </div>
         <div class="row text-center rel">
@@ -305,8 +305,8 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-12 col-md-offset-2 col-md-8 rel">
-              <img class="carouselimg img-responsive roundcorners center-block rel" src="https://www.digitalocean.com/assets/media/homepage/screenshot-create-kubernetes-cluster-4a930955.jpg" alt="screenshot of Kubernetes' user interface">
+            <div class="col-xs-12 col-md-offset-2 col-md-8 rel carouselimg">
+              <img class=" img-responsive roundcorners center-block rel" src="https://www.digitalocean.com/assets/media/homepage/screenshot-create-kubernetes-cluster-4a930955.jpg" alt="screenshot of Kubernetes' user interface">
             </div>
           </div>
           <div class="topspace">
@@ -328,6 +328,8 @@
             <div class="col-xs-12">
               <h2>Built for business</h2>
             </div>
+          </div>
+          <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" aria-hidden="true" class="www-Icon www-Icon--xlarge bui-u-mb--regular">
                 <defs>
@@ -350,7 +352,7 @@
               </svg>
               <h3>Reliable platform</h3>
               <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
-              <p><a class="right-thingie" href="#">Security</a> </p>
+              <p><a class="right-thingie big-a" href="#">Security</a> </p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" aria-hidden="true" class="www-Icon www-Icon--xlarge bui-u-mb--regular">
@@ -382,7 +384,7 @@
               <h3>Predictable pricing</h3>
               <p>Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.
               </p>
-              <p><a class="right-thingie" href="#">Pricing</a></p>
+              <p><a class="right-thingie big-a" href="#">Pricing</a></p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" aria-hidden="true" class="www-Icon www-Icon--xlarge bui-u-mb--regular">
@@ -413,7 +415,7 @@
               </svg>
               <h3>World-class service</h3>
               <p>Free around-the-clock technical support for all customers, with additional benefits for premium support subscribers. You’ll feel the love.</p>
-              <p><a class="right-thingie" href="#">Support</a></p>
+              <p><a class="right-thingie big-a" href="#">Support</a></p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
               <svg id="stubborn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 39.51 50.86" aria-hidden="true" class="www-Icon www-Icon--xlarge bui-u-mb--regular">
@@ -448,10 +450,12 @@
                     }
                   </style>
                   <clipPath id="clip-path">
-                    <rect class="cls-1" x="1" y="1" width="31.04" height="29.33"></rect>
+                    <rect class="cls-1" x="1" y="1" width="31.04" height="29.33">
+                    </rect>
                   </clipPath>
                   <clipPath id="clip-path-2">
-                    <rect class="cls-1" x="6.74" y="6.69" width="31.04" height="29.33"></rect>
+                    <rect class="cls-1" x="6.74" y="6.69" width="31.04" height="29.33">
+                    </rect>
                   </clipPath>
                 </defs>
                 <title>Artboard 41</title>
@@ -469,9 +473,11 @@
                       <path class="cls-5" d="M38.78,37h-33V5.69h33Zm-31-2h29V7.69h-29Z"></path>
                     </g>
                     <g class="cls-6">
-                      <image width="32" height="46" transform="translate(6.15 5.81)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAuCAYAAABJcBuEAAAACXBIWXMAAAsSAAALEgHS3X78AAABcUlEQVRYR+2WS3rDIAyEh4TLtgfKbTFdpPgTYwkplDQbZmOiF795KE61VnxSNy/g3doAG2ADbIANsAE+DpDbIH0jSUd94PI/zTErlPBVlxdVZM6RR87/UIauWSi5baEaq1cgoa9nfe+dMasBWG7ttgWJnoBNr8mdyFLGsxdwgYr5HvESjAUglQAcYhxVKLYBAOOEeyAG0LdtmBMFYGmxB8bbptaXAGaQo5bDkx/Q63W2FQBNnDsC6vrA7Gm3ZL3EHYryr0MmMWW7AZYiq2bGNAAOkmO+phaQB2IewtEV02y8lAxkgUwBROwWUOiFIgCej/0MxM3pcg35EFpaFVNB1zAKAKyP67bAUrjYhGpG/1GiPQtnwYcK+xtAZxTjA/0KzRzUYY4EOI1ibHXJpqLYtDjTPjqEnq1A/6r28rrfvAJhcvjg2upcfmtbcDpftEtfwbXBqVsZ7QORSaW8g3s2I+8Qavqrv+D5D3uDswXvUjffD2bEISgPvp1lAAAAAElFTkSuQmCC"></image>
+                      <image width="32" height="46" transform="translate(6.15 5.81)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAuCAYAAABJcBuEAAAACXBIWXMAAAsSAAALEgHS3X78AAABcUlEQVRYR+2WS3rDIAyEh4TLtgfKbTFdpPgTYwkplDQbZmOiF795KE61VnxSNy/g3doAG2ADbIANsAE+DpDbIH0jSUd94PI/zTErlPBVlxdVZM6RR87/UIauWSi5baEaq1cgoa9nfe+dMasBWG7ttgWJnoBNr8mdyFLGsxdwgYr5HvESjAUglQAcYhxVKLYBAOOEeyAG0LdtmBMFYGmxB8bbptaXAGaQo5bDkx/Q63W2FQBNnDsC6vrA7Gm3ZL3EHYryr0MmMWW7AZYiq2bGNAAOkmO+phaQB2IewtEV02y8lAxkgUwBROwWUOiFIgCej/0MxM3pcg35EFpaFVNB1zAKAKyP67bAUrjYhGpG/1GiPQtnwYcK+xtAZxTjA/0KzRzUYY4EOI1ibHXJpqLYtDjTPjqEnq1A/6r28rrfvAJhcvjg2upcfmtbcDpftEtfwbXBqVsZ7QORSaW8g3s2I+8Qavqrv+D5D3uDswXvUjffD2bEISgPvp1lAAAAAElFTkSuQmCC">
+                      </image>
                     </g>
-                    <polygon class="cls-7" points="38.77 37.02 5.74 37.02 5.74 5.69 7.74 5.69 7.74 35.02 38.77 35.02 38.77 37.02"></polygon>
+                    <polygon class="cls-7" points="38.77 37.02 5.74 37.02 5.74 5.69 7.74 5.69 7.74 35.02 38.77 35.02 38.77 37.02">
+                    </polygon>
                     <g>
                       <g>
                         <polyline class="cls-2" points="31.28 36.55 20.76 47.07 18.99 43.09 15.01 41.32 25.53 30.79 31.28 36.55"></polyline>
@@ -500,10 +506,10 @@
                   </g>
                 </g>
               </svg>
+              <h3>Security & Compliance</h3>
+              <p>Keep your data protected. Our platform is certified on multiple international standards, including SOC 1 Type II, SOC 2 Type II, ISO/IEC 27001, and PCI-DSS.</p>
+              <p><a class="right-thingie big-a" href="#">Compliance</a></p>
             </div>
-            <h3>Security & Compliance</h3>
-            <p>Keep your data protected. Our platform is certified on multiple international standards, including SOC 1 Type II, SOC 2 Type II, ISO/IEC 27001, and PCI-DSS.</p>
-            <p><a class="right-thingie" href="#">Compliance</a></p>
           </div>
         </div>
       </section>
@@ -516,79 +522,83 @@
             </div>
           </div>
           <div class="row topspace">
-            <!-- <table>
-              <thead class="sr-only">
+            <table class="sr-only">
+              <thead>
                 <tr>
                   <th>Location code</th>
                   <th>Location</th>
                   <th>Test speed</th>
                 </tr>
               </thead>
-            </table> -->
-            <table class="col-xs-12 col-md-6">
-              <tr class="row">
-                <td>AMS2</td>
-                <td>Amsterdam, Netherlands</td>
-                <td class=""><a href="#">Test Speed</a></td>
-              </tr>
-              <tr class="row">
-                <td>AMS3</td>
-                <td>Amsterdam, Netherlands</td>
-                <td><a href="#">Test Speed</a></td>
-              </tr>
-              <tr class="row">
-                <td>BLR1</td>
-                <td>Bangalore, India</td>
-                <td><a href="#">Test Speed</a></td>
-              </tr>
-              <tr class="row">
-                <td>FRA1</td>
-                <td>Frankfurt, Germany</td>
-                <td><a href="#">Test Speed</a></td>
-              </tr>
-              <tr class="row">
-                <td>LON1</td>
-                <td>London, UK</td>
-                <td><a href="#">Test Speed</a></td>
-              </tr>
-              <tr class="row">
-                <td>NYC1</td>
-                <td>New York, USA</td>
-                <td><a href="#">Test Speed</a></td>
-              </tr>
             </table>
-            <table class="col-xs-12 col-md-6">
-              <tr class="row">
-                <td>NYC2</td>
-                <td>New York, USA</td>
-                <td><a href="#">Test Speed</a></td>
-              </tr>
-              <tr class="row">
-                <td>NYC3</td>
-                <td>New York, USA</td>
-                <td><a href="#">Test Speed</a></td>
-              </tr>
-              <tr class="row">
-                <td>SFO1</td>
-                <td>San Francisco, USA</td>
-                <td><a href="#">Test Speed</a></td>
-              </tr>
-              <tr class="row">
-                <td>SFO1</td>
-                <td>San Francisco, USA</td>
-                <td><a href="#">Test Speed</a></td>
-              </tr>
-              <tr class="row">
-                <td>SGP1</td>
-                <td>Singapore</td>
-                <td><a href="#">Test Speed</a></td>
-              </tr>
-              <tr class="row">
-                <td>TOR1</td>
-                <td>Toronto, Canada</td>
-                <td><a href="#">Test Speed</a></td>
-              </tr>
-            </table>
+            <div class="col-xs-12 col-md-6">
+              <table class="row">
+                <tr class="col-xs-12">
+                  <td class="col-xs-1">AMS2</td>
+                  <td class="col-xs-8">Amsterdam, Netherlands</td>
+                  <td class="col-xs-3"><a href="#">Test Speed</a></td>
+                </tr>
+                <tr class="col-xs-12">
+                  <td class="col-xs-1">AMS3</td>
+                  <td class="col-xs-8">Amsterdam, Netherlands</td>
+                  <td class="col-xs-3"><a href="#">Test Speed</a></td>
+                </tr>
+                <tr class="col-xs-12">
+                  <td class="col-xs-1">BLR1</td>
+                  <td class="col-xs-8">Bangalore, India</td>
+                  <td class="col-xs-3"><a href="#">Test Speed</a></td>
+                </tr>
+                <tr class="col-xs-12">
+                  <td class="col-xs-1">FRA1</td>
+                  <td class="col-xs-8">Frankfurt, Germany</td>
+                  <td class="col-xs-3"><a href="#">Test Speed</a></td>
+                </tr>
+                <tr class="col-xs-12">
+                  <td class="col-xs-1">LON1</td>
+                  <td class="col-xs-8">London, UK</td>
+                  <td class="col-xs-3"><a href="#">Test Speed</a></td>
+                </tr>
+                <tr class="col-xs-12">
+                  <td class="col-xs-1">NYC1</td>
+                  <td class="col-xs-8">New York, USA</td>
+                  <td class="col-xs-3"><a href="#">Test Speed</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <table class="row">
+                <tr class="col-xs-12">
+                  <td class="col-xs-1">NYC2</td>
+                  <td class="col-xs-8">New York, USA</td>
+                  <td class="col-xs-3"><a href="#">Test Speed</a></td>
+                </tr>
+                <tr class="col-xs-12">
+                  <td class="col-xs-1">NYC3</td>
+                  <td class="col-xs-8">New York, USA</td>
+                  <td class="col-xs-3"><a href="#">Test Speed</a></td>
+                </tr>
+                <tr class="col-xs-12">
+                  <td class="col-xs-1">SFO1</td>
+                  <td class="col-xs-8">San Francisco, USA</td>
+                  <td class="col-xs-3"><a href="#">Test Speed</a></td>
+                </tr>
+                <tr class="col-xs-12">
+                  <td class="col-xs-1">SFO1</td>
+                  <td class="col-xs-8">San Francisco, USA</td>
+                  <td class="col-xs-3"><a href="#">Test Speed</a></td>
+                </tr>
+                <tr class="col-xs-12">
+                  <td class="col-xs-1">SGP1</td>
+                  <td class="col-xs-8">Singapore</td>
+                  <td class="col-xs-3"><a href="#">Test Speed</a></td>
+                </tr>
+                <tr class="col-xs-12">
+                  <td class="col-xs-1">TOR1</td>
+                  <td class="col-xs-8">Toronto, Canada</td>
+                  <td class="col-xs-3"><a href="#">Test Speed</a></td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </section>
@@ -603,7 +613,7 @@
             </div>
           </div>
           <div class="row text-center">
-            <div class="col-xs-12 col-md-offset-2 col-md-8 rel whitebg sectionfx lightgreytext">
+            <div class="col-xs-12 col-md-offset-2 col-md-8 rel whitebg sectionfx lightgreytext carouselimg">
               <img src="https://www.digitalocean.com/assets/media/homepage/teams/rockerbox-logo-51462da2.png" alt="rockerbox logo">
               <p>
                 <q>We have been able to make scaling the technical infrastructure of our business cost effective and efficient.</q>
@@ -611,7 +621,7 @@
               <p>Rick O'Toole<br>
                 <small>Co-founder & CEO</small>
               </p>
-              <p><a class="right-thingie" href="#">Read story</a></p>
+              <p class="topspace"><a class="right-thingie big-a" href="#">Read story</a></p>
             </div>
           </div>
           <div class="topspace">
@@ -628,7 +638,7 @@
 
       <section class="text-center white-text" id="start">
         <p class="cta">Get started now.</p>
-        <a class="btn btn-primary" href="#">Create your account</a>
+        <a class="btn btn-primary btn-big" href="#">Create your account</a>
       </section>
 
       <footer>
@@ -653,55 +663,52 @@
               <ul>
                 <li><a href="#">Products Overview</a></li>
                 <li><a href="#">Droplets</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Partnership</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Referral Program</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Legal & Security</a></li>
+                <li><a href="#">Kubernetes</a></li>
+                <li><a href="#">Managed Databases</a></li>
+                <li><a href="#">Spaces</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Load Balancers</a></li>
+                <li><a href="#">Block Storage</a></li>
+                <li><a href="#">Tools & Integrations</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Release Notes</a></li>
               </ul>
             </div>
             <div class="col-xs-6 col-md-2">
               <h4>Community</h4>
               <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Leadership</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Partnership</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Referral Program</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Legal & Security</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Meetups</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">Write for Donations</a></li>
+                <li><a href="#">Droplets for Demons</a></li>
+                <li><a href="#">Hatch Startup Program</a></li>
+                <li><a href="#">Shop Swag</a></li>
+                <li><a href="#">Research Program</a></li>
+                <li><a href="#">Currents Research</a></li>
+                <li><a href="#">Open Source</a></li>
               </ul>
             </div>
             <div class="col-xs-6 col-md-2">
               <h4>Solutions</h4>
               <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Leadership</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Partnership</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Referral Program</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Legal & Security</a></li>
+                <li><a href="#">Web & Mobile Apps</a></li>
+                <li><a href="#">Website Hosting</a></li>
+                <li><a href="#">Big Data</a></li>
+                <li><a href="#">Managed Services</a></li>
+                <li><a href="#">Business Solutions</a></li>
               </ul>
             </div>
             <div class="col-xs-6 col-md-2">
               <h4>Contacts</h4>
               <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Leadership</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Partnership</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Referral Program</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Legal & Security</a></li>
+                <li><a href="#">Get Support</a></li>
+                <li><a href="#">Trouble Signing In?</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Report Abuse</a></li>
+                <li><a href="#">System Status</a></li>
               </ul>
             </div>
           </div>
