@@ -31,6 +31,10 @@ h2 {
   font-size: 36px;
 }
 
+header {
+  background-size: cover;
+}
+
 header,
 #start {
   background-color: #0049ff;
@@ -163,10 +167,6 @@ td a:after {
   text-align: center;
 }
 
-.header-pad {
-  padding: 10px 15px;;
-}
-
 .lead {
   font-size: 20px;
   line-height: 1.4em;
@@ -246,25 +246,41 @@ footer a:hover {
 }
 
 #header-top {
+  padding: 5px 15px;
+  background-color: #fff;
   border-bottom: 1px solid #ccc;
 }
 
 #header-top a {
+  color: #5b6987;
   padding: 5px 10px;
   font-size: 12px;
   font-weight: 600;
 }
 
-#header-top a:hover {
+#header-top a:hover,
+#header-bottom a:hover {
   background-color: #fff;
+}
+
+#header-top span+a {
+  line-height: 2.5em;
 }
 
 #header-top span+a:hover {
   color: #0069ff;
+  text-decoration: none;
+}
+
+span.wrapper {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #header-bottom {
-  position: relative;
+  padding: 5px 15px 5px 0;
+  margin-top: 41px;
 }
 
 #header-bottom svg {
@@ -293,7 +309,7 @@ footer a:hover {
 }
 
 #jumbotron {
-  padding-top: 160px;
+  padding-top: 30px;
   padding-bottom: 60px;
 }
 
@@ -313,14 +329,14 @@ footer a:hover {
 }
 
 #business img {
-  height: 100px;
+  height: 80px;
   margin-bottom: 20px;
 }
 
 #stubborn-img {
-  margin-top: 20px;
-  max-height: 62px;
-  max-width: 200px;
+    margin-top: 20px;
+    max-height: 62px;
+    max-width: 200px;
 }
 
 .feature-shelves li {
@@ -413,7 +429,11 @@ footer .container:first-child {
  }
 
  #header-bottom {
+   margin-top: 0;
    background-color: #fff;
+   position: fixed;
+   width: 100%;
+   top: 41px;
  }
 
  #header-bottom svg {
@@ -431,4 +451,11 @@ footer .container:first-child {
  #jumbotron {
    padding-top: 200px;
  }
+}
+
+.setup {
+  width: 100%;
+  height: 200px;
+  background-color: purple;
+  border: 1px solid white;
 }
